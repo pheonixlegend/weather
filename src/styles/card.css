@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:20%;
+    height: 10%;
+    padding: 1.7%;
+    border-radius: 15px;
+    border: 1px solid #17475B;
+    background-color: white;
+    margin: 1.5%;
+}
+
+.tag {
+    display: flex;
+    flex-direction: column;
+    width: 89px;
+    height: 15px;
+    padding: 1.7%;
+    border-radius: 111px;
+    border: 1px solid #17475B;
+    background: #E6F4F1 0% 0% no-repeat padding-box;
+    justify-content: center;
+
+}
+
+.tag__info {
+    display: flex;
+    font: normal normal bold 10px/13px Roboto;
+    padding: 3%;
+    justify-content: center;
+    letter-spacing: 0px;
+    color: #114258;
+    opacity: 1;
+}
+
+.card__temp {
+    display: flex;
+    justify-content: left;
+    color: #17475B;
+    font: normal normal bold 16px Roboto;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    font: normal normal bold 16px Roboto;
+    padding-bottom: 6%;
+}
+
+.card__info_dtLabel {
+    color: #F3997B;
+    text-align: left;
+    font: normal normal bold 12px Roboto;
+    letter-spacing: 0px;
+    opacity: 1;
+}
+
+.card__info_dtend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
+    .card {
+        width:35%;
+        width: 325px;
+    }
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+}
+    
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+    /* Styles */
+    .card {
+        width:80%;
+        padding: 5%;
+    }
+}
